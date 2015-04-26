@@ -19,9 +19,17 @@
 
 
 	//var_dump($_SESSION['panier']);
-			if(isset($_SESSION['panier']))
+		
+		if(empty($_SESSION['panier']['id_produit']))
+				//echo 'coucou';
 			{
-				for($i =0; $i< count($_SESSION['panier']['titre']); $i++)
+				echo'<td>votre panier est vide</td>';
+
+				}
+				else{
+
+					echo 'coucou';
+				for($i =0; $i< count($_SESSION['panier']['id_produit']); $i++)
 				{
 					echo'<tr>';
 									
@@ -46,12 +54,6 @@
 
 						
 						echo'</tr>';
-
-				}
-				else{
-
-					echo'<td>votre panier est vide</td>';
-
 				}
 				    
 	

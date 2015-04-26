@@ -1,4 +1,0 @@
-AuthUserFile /var/www/lokisalle/.htpasswd
-AuthName "Accès restreints - Veuillez vous authentifier"
-AuthType Basic
-require valid-user
